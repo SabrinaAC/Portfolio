@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Sabrina Cavalcante</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+       
+<section class="sobre-container">
+    <div class="sobre-glass">
+        <div class="sobre-texto">
+            <h1>Seja bem-vindo ao meu portfólio</h1>
+            <h3>Sobre mim</h3>
+            <p>
+                Olá! Meu nome é Sabrina, sou apaixonada por design e tecnologia. <br>
+                Este é o meu portfólio, onde compartilho alguns dos meus projetos
+                em UI/UX, design gráfico e desenvolvimento web.
+            </p>
+        </div>
+    </div>
+    
+<div class="polaroid">
+    <img src="./img/sabrina.jpg" alt="Minha foto" class="minha-foto">
+    <div class="legenda">Sabrina Cavalcante</div>
+</div>
+
+
+
+       
+<section class="educacao">
+    <h2>🎓 Educação</h2>
+    <div class="educacao-container">
+        <div class="educacao-card">
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p><strong>Faculdade:</strong> UNIDESC</p>
+            <p><strong>Período:</strong> 2023 - Atual</p>
+            <p>Durante o curso, venho desenvolvendo habilidades em front-end, UI/UX design e lógica de programação. Tenho foco em unir criatividade e funcionalidade na criação de interfaces digitais.</p>
+            <h3>Marketing</h3>
+            <p><strong>Faculdade:</strong> UniSant'Anna</p>
+            <p><strong>Período:</strong> 2021 - 2022</p>
+            <p>Durante o curso aprendir ser uma profissional estratégica, criativa e analítica, preparada para atuar em áreas como mídias digitais, publicidade, vendas, branding e gestão de clientes.</p>
+        </div> 
+
+        <div class="educacao-card">
+            <h3>Formação Complementar</h3>
+            <p><strong>Cursos:</strong> UI Design, Photoshop, Figma, HTML/CSS</p>
+            <p><strong>Plataformas:</strong> Alura, Udemy, Origamid</p>
+            <p>Tenho investido em aprendizado contínuo nas áreas de design digital e prototipagem, aprimorando minhas técnicas de criação e experiência do usuário.</p>
+        </div>
+    </div>
+</section>
+
+        
+<section class="habilidades" id="habilidades">
+    <h2>Habilidades</h2>
+    
+    <div class="skills-container">
+        
+        <div class="skills-box">
+            <h3>🎨 Hard Skills</h3>
+            <ul class="hard-skills">
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" class="skill-icon">
+                    Canva — Design gráfico rápido e criativo
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="skill-icon">
+                    Figma — Design de interfaces e prototipagem
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" class="skill-icon">
+                    Photoshop — Edição e manipulação de imagens
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator" class="skill-icon">
+                    Illustrator — Criação de vetores e identidade visual
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="skills-box">
+            <h3>💻 Soft Skills</h3>
+            <ul class="hard-skills">
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon">
+                    HTML5 — Estrutura de páginas web
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon">
+                    CSS3 — Estilização e layout responsivo
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+                    JavaScript — Interatividade e lógica no front-end
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+        
+        <section id="projetos">
+            <h2 class="titulo-secao">Projetos</h2>
+            <div class="portfolio">
+
+                <div class="projeto">
+                    <!-- CORRIGIDO: adicionado data-galeria="login" -->
+                    <img src="./img/login-cadastro.jpg" alt="Projeto Login/Cadastro"
+                         data-galeria="login" onclick="abrirPopup(this)">
+                    <p>Projeto Login/Cadastro</p>
+                </div>
+
+                <div class="projeto">
+                    <!-- CORRIGIDO: adicionado data-galeria="kickboxing" -->
+                    <img src="./img/kickboxing-1.jpg" alt="Arte Kickboxing"
+                         data-galeria="kickboxing" onclick="abrirPopup(this)">
+                    <p>Artes Kickboxing</p>
+                </div>
+
+                <div class="projeto">
+                    <!-- CORRIGIDO: adicionado data-galeria="acai" -->
+                    <img src="./img/acai-1.jpg" alt="Arte Açaí"
+                         data-galeria="acai" onclick="abrirPopup(this)">
+                    <p>Artes Açaí</p>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <div id="popup" class="popup">
+            <span class="fechar" onclick="fecharPopup()">&times;</span>
+            <span class="anterior" onclick="imagemAnterior()">&#10094;</span>
+            <img id="popup-img" src="" alt="Imagem ampliada">
+            <span class="proximo" onclick="proximaImagem()">&#10095;</span>
+        </div>
+    </main>
+
+    
+    <footer id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato ou conheça mais sobre meus trabalhos:</p>
+        <div class="social-links">
+            <a href="https://github.com/SabrinaAC" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/sabrina-cavalcante-9112b124a/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <p class="copy">© 2025 - Desenvolvido por <span class="designer">Sabrina Cavalcante</span></p>
+    </footer>
+
+   <script src="js/script.js"></script>
+
+</body>
+</html>
