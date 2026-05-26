@@ -5,7 +5,7 @@ const galerias = {
         "./img/acai-3.jpg"
     ],
     "kickboxing": [
-        "./img/kickboxing-1.jpg",
+        "./img/Kickboxing.jpg",
         "./img/kickboxing-2.jpg",
         "./img/kickboxing-3.jpg"
     ],
